@@ -1,0 +1,367 @@
+* {
+	font-family: "Inter", serif;
+}
+
+
+/*animation*/
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+.hidden1 {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateY(100px);
+	transition: all 1s;
+}
+.hidden2 {
+	opacity: 0;
+	filter: blur(5px);
+	transform: matrix(1, 1, 1, 1, 2, 2);
+	transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+  .hidden1 {
+    transition: none;
+  }
+  .hidden2 {
+    transition: none;
+  }
+}
+
+
+
+
+
+/*Nav Bar section */
+
+#mobileMenu {
+	background: #ffffff;
+}
+.navItems ul li {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-right: 15px;
+	color: #666487;
+}
+.navItems ul li a:hover {
+	color: #0b5cff;
+}
+.navItems ul li button {
+	border: 1px solid #0b5cff;
+	padding: 5px 10px;
+	border-radius: 15px;
+	font-size: 16px;
+	font-weight: 600;
+}
+.navItems ul li button:hover {
+	color: #0b5cff;
+	scale: 1.1;
+
+}
+.HomeSection {
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  padding-bottom: 100px;
+}
+.homeMain {
+	padding-top: 230px;
+}
+.homeContent h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+}
+.homeContent p {
+	padding-top: 30px;
+	font-size: 15px;
+	color: #fff;
+}
+.homeBtn button {
+	width: 40%;
+	padding: 8px 0px;
+	margin-top: 25px;
+	border-radius: 8px;
+	font-size: 16px;
+	color: black;
+	background: #f9d423;
+	border: 1px solid #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all 1s;
+}
+.homeBtn button:hover{
+	background: #ffffff;
+    color: #0b5cff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    border: 1px solid black;
+    transform: scale(1.1);
+
+}
+.homeItme1 {
+	position: relative;
+	left: 20px;
+}
+.homeItem {
+	position: relative;
+	align-items: center;
+	text-align: center;
+}
+.homeItem {
+      width: 400px; /* Adjust image size */
+      height: auto;
+      animation: moveUpDown 4s infinite;
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+
+/*News Topices*/
+.newsTopices {
+	margin-top: 150px;
+	color: #fff;
+}
+.newsTopices hr {
+	color: #fff;
+	margin-top: 20px;
+}
+.newsContent a {
+	text-decoration: none;
+}
+
+
+/*Content */
+.contentMain {
+	margin-top: 180px;
+}
+.contentText h2 {
+	font-size: 32px;
+	font-weight: 700;
+}
+.contentText p {
+	font-size: 13px;
+	line-height: 25px;
+}
+
+
+
+/*section Box Content */
+
+.boxMain {
+	margin-top: 50px;
+	padding-top: 50px;
+	background: #1e2222;
+}
+.topic-box {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 250px;
+	border-radius: 10px;
+	transition: transform 0.3s ease;;
+}
+.topic-box:hover {
+	transform: translateY(-10px);
+}
+.topic-box .boxOverlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+.topic-box .boxTitle {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	z-index: 2;
+}
+.boxViewBtn {
+	margin-top: 50px;
+}
+.extra-topics {
+  display: none;
+}
+
+
+
+/*news Devlopment section*/
+
+.newsdevelopment1 h2 {
+		font-size: 25px;
+		font-weight: 700;
+}
+.newsdevelopment1 p {
+	font-size: 20px;
+}
+.newsDevelopmentItems {
+    border: 1px solid black;
+    border-radius: 10px;
+	  cursor: pointer;
+}
+.newsDevelopmentItems p {
+	font-size: 20px;
+	font-weight: 700;
+}
+.newsDevelopmentItems:hover {
+    border: 1px solid #0b5cff;
+    color: #0b5cff;
+    box-shadow: 0 10px 20px rgba(11, 92, 255, 0.2);
+}
+.newsDevelopmentItems span i {
+	font-size: 30px;
+}
+
+
+/*section content 2*/
+.contentColor {
+	background-color: #f0f8ff;
+	border-radius: 80px 80px 0 0;
+}
+.contentImage {
+	overflow: hidden; /* Hide the part of the image that moves out */
+  position: relative;
+}
+.contentImage img {
+	 transition: transform 0.7s ease;
+}
+.contentImage img:hover {
+	transform: scale(1.1);
+}
+.contentWord  {
+	padding: 20px;
+}
+.contentWord h2 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.contentWord p {
+	font-size: 16px;
+}
+
+
+
+/*section features */
+.fColor {
+	background: #000;
+}
+.featuresItems span i {
+	font-size: 50px;
+	margin-bottom: 20px;
+	box-shadow: 1px 1px darkred;
+	color: #0b5cff;
+}
+.featuresItems h3 {
+	margin-top: 10px;
+	font-size: 20px;
+}
+.featuresItems:hover {
+	transform: scale(1.1);
+}
+
+ 
+/*section team member*/
+.headingTeam h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+.team-card {
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	text-align: center;
+	background: #fff;
+}
+.team-card img {
+	width: 100%;
+	height: 360px;
+	border-bottom: 1px solid #ddd;
+}
+.team-card-body {
+	padding: 0;
+}
+.team-card h5 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 5px 0 5px;
+}
+.team-card span {
+	font-size: 14px;
+	color: #6c757d;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 10px;
+}
+.team-card p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+.social-icons a {
+	font-size: 18px;
+	color: #6c757d;
+	margin: 0 5px;
+	text-decoration: none;
+}
+.social-icons a:hover {
+  color: #007bff;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.carousel-item {
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+/*footer section*/
+.footercolor {
+	background: #00031f;
+	color: white;
+	padding: 20px 0;
+}
+.footercolor a {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+.footercolor .social-icons a {
+	margin-right: 5px;
+  font-size: 1.5rem;
+  color: #26275a;
+}
+.footercolor .social-icons a:hover {
+	color: #007aff;
+}

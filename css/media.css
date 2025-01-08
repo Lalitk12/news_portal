@@ -1,0 +1,103 @@
+/*Home section */
+
+@media (max-width: 768px) {  
+
+/*Home section */
+  .HomeSection {
+    padding-top: 0px !important;
+  }
+  .homeItem { 
+      text-align: start;
+      margin-top: 50px;
+      width: 200px !important;
+    }
+  .homeItem img {
+    	max-width: 250px;
+    	padding-top: 40px;
+    }
+   
+
+/*section Box Content */
+.boxViewBtn {
+  margin-bottom: 50px;
+}
+
+
+
+/*Content main */
+  .contentMain {
+    margin-top: 0px;
+    margin-top: 20px;
+  }
+
+
+/*news Devlopment section*/
+  .newsdevelopment1 h2 {
+    font-size: 20px;
+  }
+  .newsdevelopment1 p {
+    font-size: 15px;
+  }
+
+  /*section content 2*/
+  .contentWord h2 {
+    font-size: 23px;
+  }
+  .contentWord p {
+    font-size: 15px;
+  }
+
+
+/*section Team member*/
+.team-card-body {
+  padding: 10px 10px;
+}
+.team-card img {
+  width: 50%;
+  height: auto;
+  padding-top: 10px;
+  background-size: cover;
+}
+.team-card h5 {}
+
+
+}
+
+
+/*for tablet screen */
+@media only screen and  (min-width: 768px) and (max-width: 991px) {
+  .homeMain {
+    padding-top: 150px;
+  }
+  .homeItme1 {
+    top: 100px;
+  }
+  .newsTopices {
+    background: #05004a;
+  }
+  .newsTopices hr {
+    color: #05004a;
+  }
+  .newsTopices a {
+    color: #fff;
+  }
+
+/*Content main*/
+  .contentMain {
+    margin-top: 0px;
+    margin-top: 20px;
+    max-width: 500px;
+  }
+  .contentMain h2 {
+    
+  }
+}
+
+
+
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1170px;
+  }
+}
